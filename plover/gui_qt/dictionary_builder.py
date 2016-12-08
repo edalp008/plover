@@ -148,9 +148,6 @@ class DictionaryBuilder(QDialog, Ui_DictionaryBuilder, WindowState):
 
     def make_word_list(self):
         user_text = self.text_box.toPlainText()
-<<<<<<< HEAD
-        words = re.findall(r'(?:[\w\-_\']+|{[^\s]*})+', user_text)
-=======
         # Need to match:
         #  - {#things}, {PLOVER:}, it's, with-hyphen, word. (not including .)
         #  - free2play, 4life
@@ -159,7 +156,6 @@ class DictionaryBuilder(QDialog, Ui_DictionaryBuilder, WindowState):
         #  - [2]
         words = re.findall(r'(?:[\w\-_\']*[^\d\s\W]+[\w\-_\']*|{[^\s]*})+',
                            user_text)
->>>>>>> Germanika/bozzy
         if words:
             word_list = OrderedCounter(words)
             if not self.check_include_words.isChecked():

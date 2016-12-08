@@ -343,11 +343,6 @@ class DictionariesWidget(QWidget, Ui_DictionariesWidget):
                     exc_info = True
                 )
             else:
-<<<<<<< HEAD
-                fmt = ('{filename} was saved to {directory}.\n\n'
-                       'Would you like to add the new dictionary to Plover?'
-                       )
-=======
                 if converted:
                     if converted.save.t:
                         converted.save.t.join()
@@ -359,7 +354,6 @@ class DictionariesWidget(QWidget, Ui_DictionariesWidget):
                 fmt = ('{filename} was saved to {directory}.\n\n'
                        'Would you like to add the new dictionary to Plover?'
                 )
->>>>>>> Germanika/bozzy
                 message = fmt.format(filename=file_name, directory=file_directory)
                 if QMessageBox.question(
                         self, _('Dictionary Saved'), message,
