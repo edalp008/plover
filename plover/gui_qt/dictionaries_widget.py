@@ -17,11 +17,12 @@ from PyQt5.QtWidgets import (
     QWidget,
     QMenu,
     QAction,
-    QMessageBox
+    QMessageBox,
 )
 
 from plover import log
 from plover.dictionary.base import dictionaries as dictionary_formats
+from plover.gui_qt.conversion_failure_dialog import ConversionFailureDialog
 from plover.misc import shorten_path
 
 from plover.gui_qt.dictionaries_widget_ui import Ui_DictionariesWidget
@@ -329,11 +330,12 @@ class DictionariesWidget(QWidget, Ui_DictionariesWidget):
             new_ext = os.path.splitext(new_filename)[-1].lower()
 
             try:
+                converted = None
                 if file_ext == new_ext:
                     shutil.copyfile(filename, new_filename)
                 else:
                     open(new_filename, 'w')
-                    convert_dictionary(filename, new_filename)
+                    converted = convert_dictionary(filename, new_filename)
             except Exception:
                 log.error(
                     _('Error while saving new dictionary: %s'),
@@ -341,9 +343,23 @@ class DictionariesWidget(QWidget, Ui_DictionariesWidget):
                     exc_info = True
                 )
             else:
+<<<<<<< HEAD
                 fmt = ('{filename} was saved to {directory}.\n\n'
                        'Would you like to add the new dictionary to Plover?'
                        )
+=======
+                if converted:
+                    if converted.save.t:
+                        converted.save.t.join()
+                    if converted.save.failed_entries:
+                        ConversionFailureDialog(
+                            converted.save.failed_entries,
+                            parent=self
+                        ).exec()
+                fmt = ('{filename} was saved to {directory}.\n\n'
+                       'Would you like to add the new dictionary to Plover?'
+                )
+>>>>>>> Germanika/bozzy
                 message = fmt.format(filename=file_name, directory=file_directory)
                 if QMessageBox.question(
                         self, _('Dictionary Saved'), message,
@@ -354,3 +370,4 @@ class DictionariesWidget(QWidget, Ui_DictionariesWidget):
                     if new_filename not in self._dictionaries:
                         dictionaries.append(new_filename)
                     self._update_dictionaries(dictionaries)
+
