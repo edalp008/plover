@@ -12,12 +12,13 @@ msgstr ""
 "Last-Translator: Benoit Pierre <benoit.pierre@gmail.com>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 "X-Language: fr_CA\n"
+"X-Source-Language: C\n"
 
 #: plover/gui_qt/about_dialog_ui.py:35
 msgid "Plover: About"
@@ -323,7 +324,7 @@ msgstr ""
 
 #: plover/gui_qt/config_window.py:358
 msgid "System"
-msgstr ""
+msgstr "le système"
 
 #: plover/gui_qt/config_window.py:359
 msgid "Type"
@@ -344,15 +345,15 @@ msgstr "Dictionnaires"
 
 #: plover/gui_qt/dictionaries_widget.py:287
 msgid "&Save As..."
-msgstr ""
+msgstr "&sauve-garder sous ... "
 
 #: plover/gui_qt/dictionaries_widget.py:291
 msgid "&Open Containing Folder"
-msgstr ""
+msgstr "&Ouvrir Dossier Contenant "
 
 #: plover/gui_qt/dictionaries_widget.py:311
 msgid "{ext_upper} Dictionary (*{dot_ext})"
-msgstr ""
+msgstr "{ext_upper} Dictionnaire(*{dot_ext}"
 
 #: plover/gui_qt/dictionaries_widget.py:322
 msgid "Save Dictionary As..."
@@ -361,7 +362,7 @@ msgstr "Sauvegarder les dictionnaires sous..."
 #: plover/gui_qt/dictionaries_widget.py:339
 #, python-format
 msgid "Error while saving new dictionary: %s"
-msgstr ""
+msgstr "Erreur lors de l'enregistrement d'un nouveau dictionnaire:%s"
 
 #: plover/gui_qt/dictionaries_widget.py:349
 msgid "Dictionary Saved"
@@ -401,7 +402,7 @@ msgstr "Supprimer"
 #: plover/gui_qt/dictionary_builder.py:134
 #: plover/gui_qt/dictionary_editor_ui.py:194
 msgid "&Undo"
-msgstr "Annuler"
+msgstr "&Annuler"
 
 #: plover/gui_qt/dictionaries_widget_ui.py:101
 msgid "Undo last add/delete/reorder operation."
@@ -422,7 +423,7 @@ msgstr "Ctrl+O"
 
 #: plover/gui_qt/dictionaries_widget_ui.py:106
 msgid "Add &translation"
-msgstr "Ajouter une Traduction"
+msgstr "Ajouter une &traduction"
 
 #: plover/gui_qt/dictionaries_widget_ui.py:107
 #: plover/gui_qt/dictionary_editor_ui.py:198
@@ -430,21 +431,22 @@ msgid "Add a new translation"
 msgstr "Ajouter une nouvelle traduction"
 
 #: plover/gui_qt/dictionaries_widget_ui.py:108
-#: plover/gui_qt/dictionary_editor_ui.py:199 plover/gui_qt/main_window_ui.py:213
+#: plover/gui_qt/dictionary_editor_ui.py:199
+#: plover/gui_qt/main_window_ui.py:213
 msgid "Ctrl+N"
 msgstr "Ctrl+N"
 
 #: plover/gui_qt/dictionaries_widget_ui.py:109
 msgid "Move dictionaries &up"
-msgstr "monter le dictionnaire"
+msgstr "&monter le dictionnaire"
 
 #: plover/gui_qt/dictionaries_widget_ui.py:110
 msgid "Move selected dictionaries up."
-msgstr "monter les dictionnaires selectionnés"
+msgstr "monter les dictionnaires selectionnés."
 
 #: plover/gui_qt/dictionaries_widget_ui.py:111
 msgid "Move dictionaries &down"
-msgstr "descendre les dictionnaires"
+msgstr "&descendre les dictionnaires"
 
 #: plover/gui_qt/dictionaries_widget_ui.py:112
 msgid "Move selected dictionaries down."
@@ -453,7 +455,7 @@ msgstr "Déplace les dictionnaires sélectionnés vers le bas."
 #: plover/gui_qt/dictionary_builder.py:70
 #: plover/gui_qt/dictionary_builder_ui.py:110
 msgid "Defining word {current} of {total}: {word}"
-msgstr ""
+msgstr "Définition du mot {current} de {total}: ​​{word}"
 
 #: plover/gui_qt/dictionary_builder.py:88
 msgid "&Quit"
@@ -465,27 +467,27 @@ msgstr "Quitter le constructeur de dictionnaire"
 
 #: plover/gui_qt/dictionary_builder.py:92
 msgid "&Start Building"
-msgstr ""
+msgstr "&Commencer à construire"
 
 #: plover/gui_qt/dictionary_builder.py:93
 msgid "Analyse the current text and start building"
-msgstr ""
+msgstr "Analyser le texte actuel et commencer à construire"
 
 #: plover/gui_qt/dictionary_builder.py:105
 msgid "&Add"
-msgstr ""
+msgstr "&Ajouter"
 
 #: plover/gui_qt/dictionary_builder.py:107
 msgid "Add the current stroke"
-msgstr ""
+msgstr "Ajouter le trait actuel"
 
 #: plover/gui_qt/dictionary_builder.py:111
 msgid "&Previous"
-msgstr ""
+msgstr "&précédent"
 
 #: plover/gui_qt/dictionary_builder.py:115
 msgid "Go back to the previous word"
-msgstr ""
+msgstr "Retourner au mot précédent"
 
 #: plover/gui_qt/dictionary_builder.py:118
 msgid "&Next"
@@ -493,35 +495,35 @@ msgstr "&suivant"
 
 #: plover/gui_qt/dictionary_builder.py:122
 msgid "Skip the current word and go to the next"
-msgstr ""
+msgstr "Ignorer le mot actuel et passer au suivante"
 
 #: plover/gui_qt/dictionary_builder.py:125
 msgid "A&dd and Next"
-msgstr ""
+msgstr "&Ajouter et au suivant"
 
 #: plover/gui_qt/dictionary_builder.py:130
 msgid "Add the current stroke and move to the next word"
-msgstr ""
+msgstr "Ajouter le trait actuel et passer au mot suivant"
 
 #: plover/gui_qt/dictionary_builder.py:138
 msgid "Undo the last addition"
-msgstr ""
+msgstr "Annuler le dernier ajout"
 
 #: plover/gui_qt/dictionary_builder.py:142
 msgid "&Back to Input"
-msgstr ""
+msgstr "&Retour à l'entrée"
 
 #: plover/gui_qt/dictionary_builder.py:144
 msgid "Back to word list"
-msgstr ""
+msgstr "Retour à la liste des mots"
 
 #: plover/gui_qt/dictionary_builder.py:253
 msgid "No words found"
-msgstr ""
+msgstr "Aucun mot trouvé"
 
 #: plover/gui_qt/dictionary_builder.py:254
 msgid "Please enter text to build your dictionaries with."
-msgstr ""
+msgstr "Veuillez entrer du texte pour construire vos dictionnaires."
 
 #: plover/gui_qt/dictionary_builder_ui.py:104
 msgid "Plover: Dictionary Builder"
@@ -532,22 +534,25 @@ msgid ""
 "To start building your dictionaries, please enter the text you would like to "
 "analyze for words. Text can be anything from articles to lists."
 msgstr ""
+"Pour commencer à construire vos dictionnaires, veuillez saisir le texte que "
+"vous souhaitez analyser pour les mots. Le texte peut être n'importe quoi, "
+"des articles à des listes."
 
 #: plover/gui_qt/dictionary_builder_ui.py:106
 msgid "Include words that are already defined in my dictionaries"
-msgstr ""
+msgstr "Inclure les mots qui sont déjà définis dans mes dictionnaires"
 
 #: plover/gui_qt/dictionary_builder_ui.py:107
 msgid "Frequency"
-msgstr ""
+msgstr "fréquence"
 
 #: plover/gui_qt/dictionary_builder_ui.py:108
 msgid "Order of Appearance"
-msgstr ""
+msgstr "Ordre d'apparition"
 
 #: plover/gui_qt/dictionary_builder_ui.py:109
 msgid "Alphabetical"
-msgstr ""
+msgstr "Alphabétique"
 
 #: plover/gui_qt/dictionary_editor.py:226
 #: plover/gui_qt/dictionary_editor_ui.py:187
@@ -565,12 +570,12 @@ msgstr "# traits"
 
 #: plover/gui_qt/dictionary_editor.py:234
 msgid "# Words"
-msgstr ""
+msgstr "# mots"
 
 #: plover/gui_qt/dictionary_editor.py:553
 #: plover/gui_qt/dictionary_editor_ui.py:190
 msgid "Showing {filtered} / {total}"
-msgstr ""
+msgstr "Affichage{filtered} / {total}"
 
 #: plover/gui_qt/dictionary_editor_ui.py:178
 msgid "Plover: Dictionary Editor"
@@ -578,7 +583,7 @@ msgstr "Plover: Éditeur de dictionnaire"
 
 #: plover/gui_qt/dictionary_editor_ui.py:179
 msgid "Case sensitive"
-msgstr ""
+msgstr "Sensible aux lettres majuscules et minuscules"
 
 #: plover/gui_qt/dictionary_editor_ui.py:180
 msgid "Clear"
@@ -590,31 +595,33 @@ msgstr "Filtre"
 
 #: plover/gui_qt/dictionary_editor_ui.py:183
 msgid "Show only"
-msgstr ""
+msgstr "Montrer seulement"
 
 #: plover/gui_qt/dictionary_editor_ui.py:184
 msgid "RegEx"
-msgstr ""
+msgstr "RegEx"
 
 #: plover/gui_qt/dictionary_editor_ui.py:185
 msgid "Find entries that have matching strokes but different translations"
 msgstr ""
+"Trouver des entrées qui ont des traits similaires mais des traductions "
+"différentes"
 
 #: plover/gui_qt/dictionary_editor_ui.py:186
 msgid "Collisions"
-msgstr ""
+msgstr "Collisions"
 
 #: plover/gui_qt/dictionary_editor_ui.py:188
 msgid "Find entries that have matching strokes and translations"
-msgstr ""
+msgstr "Trouvez des entrées qui ont des traits et des traductions identiques"
 
 #: plover/gui_qt/dictionary_editor_ui.py:189
 msgid "Duplicates"
-msgstr ""
+msgstr "Doublons"
 
 #: plover/gui_qt/dictionary_editor_ui.py:191
 msgid "&Delete"
-msgstr "Supprimer"
+msgstr "&Supprimer"
 
 #: plover/gui_qt/dictionary_editor_ui.py:192
 msgid "Delete selected entries."
@@ -624,7 +631,8 @@ msgstr "Supprime les entrées sélectionnées."
 msgid "Undo last add/delete/edit operation."
 msgstr "Annule la dernière opération."
 
-#: plover/gui_qt/dictionary_editor_ui.py:197 plover/gui_qt/main_window_ui.py:211
+#: plover/gui_qt/dictionary_editor_ui.py:197
+#: plover/gui_qt/main_window_ui.py:211
 msgid "&New translation"
 msgstr "&Nouvelle Traduction"
 
@@ -670,11 +678,11 @@ msgstr "&Fichier"
 
 #: plover/gui_qt/main_window_ui.py:201
 msgid "&Tools"
-msgstr "Outils"
+msgstr "&Outils"
 
 #: plover/gui_qt/main_window_ui.py:202
 msgid "&Help"
-msgstr "Aide"
+msgstr "&Aide"
 
 #: plover/gui_qt/main_window_ui.py:203
 msgid "&Edit"
@@ -714,7 +722,7 @@ msgstr "Ouvrir la fenêtre des nouvelles traductions."
 
 #: plover/gui_qt/main_window_ui.py:214
 msgid "&Lookup"
-msgstr "Recherche"
+msgstr "&Recherche"
 
 #: plover/gui_qt/main_window_ui.py:215
 msgid "Open the lookup dialog."
@@ -731,7 +739,7 @@ msgstr "Papier &Ruban gommé"
 
 #: plover/gui_qt/main_window_ui.py:218
 msgid "Open the paper tape."
-msgstr "Ouvrir le papier collant"
+msgstr "Ouvrir le papier collant."
 
 #: plover/gui_qt/main_window_ui.py:219 plover/gui_qt/paper_tape_ui.py:93
 #: plover/gui_qt/suggestions_dialog_ui.py:56
@@ -752,7 +760,7 @@ msgstr "Ctrl+J"
 
 #: plover/gui_qt/main_window_ui.py:223
 msgid "&About"
-msgstr "À propos"
+msgstr "&À propos"
 
 #: plover/gui_qt/main_window_ui.py:224
 msgid "Open the about dialog."
@@ -768,7 +776,7 @@ msgstr "Ctrl+R"
 
 #: plover/gui_qt/main_window_ui.py:228
 msgid "&Show"
-msgstr "Afficher"
+msgstr "&Afficher"
 
 #: plover/gui_qt/main_window_ui.py:229
 msgid "Show the main window."
@@ -856,7 +864,7 @@ msgstr "Basculer \"toujours visible\""
 
 #: plover/gui_qt/paper_tape_ui.py:94 plover/gui_qt/suggestions_dialog_ui.py:57
 msgid "Select &font"
-msgstr "Sélectionner la fonte de caractères"
+msgstr "Sélectionner la &police de caractères"
 
 #: plover/gui_qt/paper_tape_ui.py:95 plover/gui_qt/suggestions_dialog_ui.py:58
 msgid "Open font selection dialog"
